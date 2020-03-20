@@ -1,28 +1,23 @@
-div {
-  border: 1px solid blue;
-}
-
 .page {
-    font-family: 'Helvetica Neue', 'Arial', sans-serif;
-    color: #000;
-    min-width: 1100px;
-    /* мы ещё не умеем делать мобильную версию сайта, */
-    /* поэтому выше установлена минимальная ширина страницы */
-    max-width: 1600px;
-    /* выше установили ограничение по максимальной ширине */
-    margin: 0 auto;
-    /* выше для экранов больше 1600px отцентрировали весь контент */
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  color: #000;
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    min-height: 600px;
-    max-height: 100hv;
-    /* выше установили ограничения для секции */
-    background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 100hv;
+  /* выше установили ограничения для секции */
+  background-color: #F2F2F2;
 }
 
 .header__title {
@@ -58,12 +53,12 @@ div {
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-    position: absolute;
-    top: 64px;
-    right: 0;
-    height: 568px;
-    width: 568px;
-    background-color: #2F80ED;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  height: 568px;
+  width: 568px;
+  background-color: #2F80ED;
 }
 
 .logo {
@@ -85,28 +80,102 @@ div {
 
 .description__two-columns {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   width: 80%;
 }
 
 .two-columns__brief {
+  color: #2F80ED;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
   width: 175px;
 }
 
 .two-columns__main-text {
   flex-direction: column;
+  flex-wrap: wrap;
   width: 80%;
   min-width: 784px;
 }
 
 .two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
   margin: 0;
   margin-bottom: 30px;
 }
 
+.two-columns__span-accent {
+  font-weight: 600;
+}
+
 .two-columns__paragraph:last-child {
   margin-bottom: 0;
+}
+
+.digits {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.digits__section-title {
+  font-size: 60px;
+  line-height: 69px;
+  text-align: center;
+  font-weight: 700;
+  width: 60%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.digits__section-subtitle {
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  font-weight: 400;
+  width: 60%;
+}
+
+.digits__table {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.table__cell {
+  margin-top: 60px;
+  width: 250px;
+}
+
+.table__heading {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.table__text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.feinman {
+  background-image: url(/images/feinman.png);
+  background-size: 867px 637px;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  height: 790px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
