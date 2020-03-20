@@ -1,4 +1,10 @@
+div {
+  border: 1px solid blue;
+}
+
 .page {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    color: #000;
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
     /* поэтому выше установлена минимальная ширина страницы */
@@ -10,16 +16,97 @@
 }
 
 .header {
+    display: flex;
+    align-items: center;
     height: 100vh;
     min-height: 600px;
-    max-height: 756px;
+    max-height: 100hv;
     /* выше установили ограничения для секции */
+    background-color: #F2F2F2;
+}
+
+.header__title {
+  position: relative;
+  z-index: 5;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 600;
+  width: 730px;
+  margin-left: 64px;
+}
+
+.header__subtitle {
+  position: absolute;
+  z-index: 5;
+  bottom: 30px;
+  left: 64px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+  width: 388px;
+}
+
+.header__main-illustration {
+  position: absolute;
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+  width: 765px;
+  height: 608px;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+    position: absolute;
+    top: 64px;
+    right: 0;
     height: 568px;
     width: 568px;
+    background-color: #2F80ED;
+}
+
+.logo {
+  width: 183px;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 5;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.description__two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.two-columns__brief {
+  width: 175px;
+}
+
+.two-columns__main-text {
+  flex-direction: column;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
