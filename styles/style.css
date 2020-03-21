@@ -1,6 +1,5 @@
 .page {
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  color: #000;
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -124,7 +123,7 @@
   flex-direction: column;
 }
 
-.digits__section-title {
+.section-title {
   font-size: 60px;
   line-height: 69px;
   text-align: center;
@@ -134,7 +133,7 @@
   margin-bottom: 20px;
 }
 
-.digits__section-subtitle {
+.section-subtitle {
   font-size: 24px;
   line-height: 34px;
   text-align: center;
@@ -142,17 +141,24 @@
   width: 60%;
 }
 
-.digits__table {
+.table {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .table__cell {
   margin-top: 60px;
   width: 250px;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  margin-top: 80px;
+  width: 200px;
+  margin-right: 0;
 }
 
 .table__heading {
@@ -168,6 +174,10 @@
   font-weight: 400;
   margin: 0;
   margin-top: 20px;
+}
+
+.digits__section-title_theme_dark {
+  color: #ffffff;
 }
 
 .feinman {
@@ -205,13 +215,25 @@
   font-size: 36px;
   line-height: 51px;
   font-weight: 400;
-
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
+.kaufman {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 90px 0;
+  overflow: hidden;
+  position: relative;
+} 
+
+.kaufman_triangle {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -210;
+  width: 877px;
+  height: 877px;
 }
+
