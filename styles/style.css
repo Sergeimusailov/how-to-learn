@@ -30,7 +30,7 @@
   height: 32px;
   top: 30px;
   left: 64px;
-  background-image: url(/images/logo.svg);
+  background-image: url('../images/logo.svg');
 }
 
 .header__title {
@@ -181,7 +181,7 @@
   font-weight: 400;
 }
 
-.digits__section-title_theme_dark {
+.section-title_theme_dark {
   color: #ffffff;
 }
 
@@ -191,11 +191,12 @@
   flex-direction: column;
   align-items: center;
   height: 790px;
-  margin-top: 100px;
-  background-image: url(/images/feinman.png);
+  padding-top: 100px;
+  background-image: url('../images/feinman.png');
   background-size: 867px 637px;
   background-position: bottom left;
   background-repeat: no-repeat;
+  background-color: #f2f2f2;
 }
 
 .feinman__title {
@@ -269,7 +270,7 @@
   z-index: 0;
   height: 877px;
   width: 877px;
-  background-image: url(/images/triangle.svg);
+  background-image: url('../images/triangle.svg');
 }
 
 .footer {
@@ -282,7 +283,7 @@
 
 .logo_place_footer {
   height: 35px;
-  background-image: url(/images/logo_white.svg);
+  background-image: url('../images/logo_white.svg');
 }
 
 .footer__columns {
@@ -293,9 +294,12 @@
   margin: 60px 0 40px;
 }
 
-.footer__columns_content_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
   justify-content: space-between;
   flex-basis: 711px;
 }
@@ -308,13 +312,11 @@
 }
 
 .footer__columns_content_info {
-  display: flex;
-  flex-direction: column;
+
 }
 
 .footer__columns_content_social {
-  display: flex;
-  flex-direction: column;
+
 }
 
 .footer__column-heading {
@@ -329,38 +331,27 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding-left: 0;
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-}
-
-.footer__row-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-decoration: none;
+  list-style-type: none;
 }
 
 .footer__link {
-  color: #fff;
+  margin: 0;
   display: flex;
+  align-items: center;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  margin: 0;
+  color: #fff;
   text-decoration: none;
 }
 
-.footer__social_icons {
+.footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
-}
-
-.footer__column-links:last-child {
-  margin-bottom: 16px;
-}
-
-.footer__row-links:last-child {
-  margin-bottom: 16px;
 }
