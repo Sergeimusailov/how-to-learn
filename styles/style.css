@@ -63,6 +63,10 @@
   font-weight: 400;
 }
 
+.header__link:hover {
+  border-bottom: 1px solid #2f80ed;
+}
+
 .header__main-illustration {
   position: absolute;
   bottom: 0;
@@ -226,6 +230,10 @@
   text-decoration: none;
 }
 
+.feinman__link:hover {
+  border-bottom: 1px solid #000;
+}
+
 .kaufman {
   position: relative;
   overflow: hidden;
@@ -311,14 +319,6 @@
   font-weight: 400;
 }
 
-.footer__columns_content_info {
-
-}
-
-.footer__columns_content_social {
-
-}
-
 .footer__column-heading {
   margin: 0;
   margin-bottom: 20px;
@@ -348,6 +348,10 @@
   font-weight: 400;
   color: #fff;
   text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
 }
 
 .footer__social-icon {
