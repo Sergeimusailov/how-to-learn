@@ -1,6 +1,7 @@
 @import url(./_theme/section-subtitle_theme_dark.css);
 
 .section-subtitle {
+  margin: 0;
   z-index: 1;
   width: 60%;
   font-size: 24px;
