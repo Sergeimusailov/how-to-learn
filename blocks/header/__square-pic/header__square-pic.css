@@ -8,12 +8,3 @@
   transform: rotate(-15deg);
   animation: rotation normal linear 20s infinite;
 }
-
-@keyframes rotation {
-  from {
-    transform: rotate(-15deg);
-  }
-  to {
-    transform: rotate(345deg);
-  }
-}
